@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -67,7 +70,8 @@
               "browserTarget": "frontend-test-winprovit:build:production"
             },
             "development": {
-              "browserTarget": "frontend-test-winprovit:build:development"
+              "browserTarget": "frontend-test-winprovit:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
